@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naevis○☆ Shop</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+
+        .profile {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .avatar {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: white;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .username {
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .bio {
+            color: rgba(255,255,255,0.9);
+            font-size: 14px;
+        }
+
+        .link {
+            display: block;
+            background: white;
+            text-decoration: none;
+            color: #333;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .link:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            transition: left 0.5s;
+        }
+
+        .link:hover:before {
+            left: 100%;
+        }
+
+        .shopee {
+            background: linear-gradient(135deg, #ee4d2d, #ff6347);
+            color: white;
+        }
+
+        .instagram {
+            background: linear-gradient(135deg, #e4405f, #833ab4, #fcaf45);
+            color: white;
+        }
+
+        .product {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .link-emoji {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: rgba(255,255,255,0.7);
+            font-size: 12px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .link {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        .link:nth-child(2) { animation-delay: 0.1s; }
+        .link:nth-child(3) { animation-delay: 0.2s; }
+        .link:nth-child(4) { animation-delay: 0.3s; }
+        .link:nth-child(5) { animation-delay: 0.4s; }
+        .link:nth-child(6) { animation-delay: 0.5s; }
+        .link:nth-child(7) { animation-delay: 0.6s; }
+        .link:nth-child(8) { animation-delay: 0.7s; }
+        .link:nth-child(9) { animation-delay: 0.8s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Section -->
+        <div class="profile">
+            <div class="avatar">☆</div>
+            <div class="username">Naevis○☆</div>
+            <div class="bio">✨ Slay On A Budget Collection ✨</div>
+        </div>
+
+        <!-- Product Links -->
+        <a href="https://s.shopee.co.id/802sEKPRp3" class="link shopee" target="_blank">
+            <span class="link-emoji">🛍️</span>
+            Produk 1 - Check it out!
+        </a>
+
+        <a href="https://s.shopee.co.id/5pyNeWkVXs" class="link product" target="_blank">
+            <span class="link-emoji">👗</span>
+            Produk 2 - Must Have Item
+        </a>
+
+        <a href="https://s.shopee.co.id/9UrbFslIvd" class="link product" target="_blank">
+            <span class="link-emoji">👜</span>
+            Produk 3 - Trending Now
+        </a>
+
+        <a href="https://s.shopee.co.id/4L9V6UFt0z" class="link product" target="_blank">
+            <span class="link-emoji">✨</span>
+            Produk 4 - Popular Choice
+        </a>
+
+        <a href="https://s.shopee.co.id/7V6WsWkq5n" class="link product" target="_blank">
+            <span class="link-emoji">💫</span>
+            Produk 5 - Limited Stock
+        </a>
+
+        <a href="https://s.shopee.co.id/6fXPtBB4BN" class="link shopee" target="_blank">
+            <span class="link-emoji">🔥</span>
+            Produk 6 - Hot Deal
+        </a>
+
+        <!-- Instagram Link -->
+        <a href="https://www.instagram.com/slayonabudget05" class="link instagram" target="_blank">
+            <span class="link-emoji">📸</span>
+            Follow @slayonabudget05 - Daily Inspo
+        </a>
+
+        <div class="footer">
+            Made with 💖 by Naevis○☆
+        </div>
+    </div>
+
+    <script>
+        // Simple click tracking
+        document.querySelectorAll('.link').forEach(link => {
+            link.addEventListener('click', function() {
+                console.log('Link clicked:', this.textContent.trim());
+            });
+        });
+
+        // Add some interactive effects
+        document.querySelectorAll('.link').forEach(link => {
+            link.addEventListener('mousedown', function() {
+                this.style.transform = 'scale(0.98)';
+            });
+            
+            link.addEventListener('mouseup', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+  </html>
